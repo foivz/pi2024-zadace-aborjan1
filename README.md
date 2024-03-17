@@ -16,7 +16,7 @@ Antonio Borjan | aborjan22@foi.hr | 000000000 | aborjan1
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
 
 ## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+https://github.com/foivz/pi2024-zadace-aborjan1/blob/master/Korisni%C4%8Dki%20zahtjevi%20-%20Softver%20za%20upravljanje%20recikliranjem%20i%20kapacitetima%20u%20gradu.pdf
 
 ## Resursi
 (Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)

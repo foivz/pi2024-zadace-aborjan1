@@ -6,7 +6,7 @@ Softver za upravljanje recikliranjem i kapacitetima u gradu
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Antonio Borjan | aborjan22@foi.hr | 000000000 | aborjan1
+Antonio Borjan | aborjan22@foi.hr | 00116158877 | aborjan1
 
 
 ## Opis domene

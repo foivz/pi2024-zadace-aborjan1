@@ -9,6 +9,7 @@ namespace RecycloSmart.Models
 {
     public class Radnik
     {
+        public int Id {  get; set; }
         public string KorisnickoIme { get; set; }
         public string Lozinka { get; set; }
     }

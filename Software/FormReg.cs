@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RecycloSmart.Models;
+using RecycloSmart.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,21 @@ namespace RecycloSmart
         public FormReg()
         {
             InitializeComponent();
+        }
+
+        private void btnAddRadnik_Click(object sender, EventArgs e)
+        {
+            Radnik noviRadnik = new Radnik
+            {
+                KorisnickoIme = txtUsername.Text,
+                Lozinka = txtPassword.Text,
+
+            };
+
+            RadnikRepozitori radnikRepozitori = new RadnikRepozitori();
+            radnikRepozitori.AddRadnik(noviRadnik);
+
+            MessageBox.Show("Uspjesna registracija!", "Informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

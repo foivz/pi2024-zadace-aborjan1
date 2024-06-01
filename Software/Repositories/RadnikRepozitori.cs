@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RecycloSmart.Repositories
 {
@@ -50,6 +51,27 @@ namespace RecycloSmart.Repositories
             };
 
             return radnik;
+        }
+
+        public void AddRadnik(Radnik noviRadnik)
+        {
+           
+                DB.OpenConnection();
+                string query = "INSERT INTO Radnik (KorisnickoIme, Lozinka) OUTPUT INSERTED.Id VALUES (@KorisnickoIme, @Lozinka)";
+                using (SqlCommand command = new SqlCommand(query, DB.GetConnection()))
+                {
+                    command.Parameters.AddWithValue("@KorisnickoIme", noviRadnik.KorisnickoIme);
+                    command.Parameters.AddWithValue("@Lozinka", noviRadnik.Lozinka);
+                   
+
+                    noviRadnik.Id = (int)command.ExecuteScalar();
+                 
+                }
+            
+           
+ 
+         DB.CloseConnection();
+          
         }
     }
 }

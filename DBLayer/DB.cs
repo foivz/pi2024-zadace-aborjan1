@@ -24,6 +24,11 @@ namespace DBLayer
                 _connection.Close();
             }
         }
+
+        public static SqlConnection GetConnection()
+        {
+            return _connection;
+        }
         public static SqlDataReader GetDataReader(string query)
         {
             SqlCommand command = new SqlCommand(query, _connection);

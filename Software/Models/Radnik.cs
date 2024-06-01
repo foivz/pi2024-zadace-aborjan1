@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RecycloSmart.Models
 {
-    public abstract class Radnik
+    public class Radnik
     {
         public string KorisnickoIme { get; set; }
         public string Lozinka { get; set; }
-
     }
 }

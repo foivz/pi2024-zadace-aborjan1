@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace RecycloSmart.Models
 {
-    internal class Materijal
+    public abstract class Materijal
     {
         public string Naziv {  get; set; }
         public int Kolicina { get; set; }
         public string Vrsta { get; set; }
         public int Datum { get; set; }
+
+
     }
 }

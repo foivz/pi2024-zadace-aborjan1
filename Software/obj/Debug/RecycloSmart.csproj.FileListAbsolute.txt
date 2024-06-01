@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\bin\Debug\RecycloSmart.exe.config
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\bin\Debug\RecycloSmart.exe
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\bin\Debug\RecycloSmart.pdb
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.Properties.Resources.resources
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.csproj.GenerateResource.cache
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.exe
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.pdb
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.FormLogin.resources
+C:\Users\User\Desktop\RecycloSmart\RecycloSmart\obj\Debug\RecycloSmart.StartForm.resources

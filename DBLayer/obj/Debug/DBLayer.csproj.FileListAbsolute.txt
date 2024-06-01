@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\pi2024-zadace-aborjan1\DBLayer\bin\Debug\DBLayer.dll
+C:\Users\User\source\repos\pi2024-zadace-aborjan1\DBLayer\bin\Debug\DBLayer.pdb
+C:\Users\User\source\repos\pi2024-zadace-aborjan1\DBLayer\obj\Debug\DBLayer.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\pi2024-zadace-aborjan1\DBLayer\obj\Debug\DBLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\pi2024-zadace-aborjan1\DBLayer\obj\Debug\DBLayer.dll
+C:\Users\User\source\repos\pi2024-zadace-aborjan1\DBLayer\obj\Debug\DBLayer.pdb

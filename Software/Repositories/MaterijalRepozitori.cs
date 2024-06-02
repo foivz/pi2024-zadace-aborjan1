@@ -20,9 +20,8 @@ namespace RecycloSmart.Repositories
         private static Materijal DohvatiMaterijal(string sql)
         {
             DB.OpenConnection();
-            var reader = DB.GetDataReader(sql);
             Materijal materijal = null;
-
+               var reader = DB.GetDataReader(sql);
             if (reader.HasRows == true)
             {
                 reader.Read();
@@ -40,7 +39,7 @@ namespace RecycloSmart.Repositories
             string naziv = reader["Naziv"].ToString();
             int kolicina = int.Parse(reader["Kolicina"].ToString());
             string vrsta = reader["Vrsta"].ToString();
-            int datum = int.Parse(reader["Datum"].ToString());
+            string datum = reader["Datum"].ToString();
 
             var materijal = new Materijal
             {
@@ -164,5 +163,36 @@ namespace RecycloSmart.Repositories
             }
             DB.CloseConnection();
         }
+
+        public Materijal PretraziMaterijal(string naziv)
+        {
+            Materijal materijal = null;
+
+           
+                DB.OpenConnection();
+                materijal = GetMaterijal(naziv);
+                DB.CloseConnection();
+           
+
+            return materijal;
+        }
+
+        public static List<Materijal> GetMaterijals()
+        {
+            List<Materijal> materijali = new List<Materijal>();
+            string sql = "SELECT * FROM Materijal";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Materijal materijal = CreateObject(reader);
+                materijali.Add(materijal);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return materijali;
+        }
+
+
     }
 }

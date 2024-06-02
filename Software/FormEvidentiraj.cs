@@ -16,7 +16,7 @@ namespace RecycloSmart
 {
     public partial class FormEvidentiraj : Form
     {
-        
+        // dodaj da se samo isprazne text boxovi nakon upisa
         
         public FormEvidentiraj()
         {
@@ -63,7 +63,10 @@ namespace RecycloSmart
             {
                 materijalRepozitori.UnesiMaterijal(naziv, kolicina, vrsta, datum, "");
             }
-           
+            txtNaziv.Text = "";
+            txtKolicina.Text = "";
+            txtVrsta.Text = "";
+            txtDatum.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,9 +74,17 @@ namespace RecycloSmart
             MaterijalRepozitori materijalRepozitori = new MaterijalRepozitori();
             string naziv = txtNaziv.Text;
             materijalRepozitori.ObrisiMaterijal(naziv);
+            txtNaziv.Text = "";
+            txtKolicina.Text = "";
+            txtVrsta.Text = "";
+            txtDatum.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
             FormRadnik formRadnik = new FormRadnik();
             Hide();

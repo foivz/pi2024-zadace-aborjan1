@@ -44,16 +44,8 @@ namespace RecycloSmart
               
                 Ulogiran = RadnikRepozitori.GetRadnik(txtPassword.Text);
 
-                if (Ulogiran != null)
-                {
-                    MessageBox.Show($"Retrieved: {Ulogiran.Lozinka}, Expected: {txtPassword.Text}", "Debug", MessageBoxButtons.OK);
-                }
-                else
-                {
-                    MessageBox.Show("User not found!", "Debug", MessageBoxButtons.OK);
-                }
 
-                if (Ulogiran != null && Ulogiran.Lozinka.Trim().Equals(txtPassword.Text.Trim(), StringComparison.OrdinalIgnoreCase))
+                if (Ulogiran != null && Ulogiran.Lozinka.Trim().Equals(txtPassword.Text.Trim(), StringComparison.OrdinalIgnoreCase) && Ulogiran.KorisnickoIme.Trim().Equals(txtUsername.Text.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
                     FormRadnik formaRadnika = new FormRadnik();
                     Hide();
@@ -71,6 +63,19 @@ namespace RecycloSmart
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StartForm pocetnaForma = new StartForm();
+            Hide();
+            pocetnaForma.ShowDialog();
+            Close();
         }
     }
 }

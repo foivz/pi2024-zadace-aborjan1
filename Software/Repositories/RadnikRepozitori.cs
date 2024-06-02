@@ -55,22 +55,20 @@ namespace RecycloSmart.Repositories
 
         public void AddRadnik(Radnik noviRadnik)
         {
-           
-                DB.OpenConnection();
-                string query = "INSERT INTO Radnik (KorisnickoIme, Lozinka) OUTPUT INSERTED.Id VALUES (@KorisnickoIme, @Lozinka)";
-                using (SqlCommand command = new SqlCommand(query, DB.GetConnection()))
-                {
-                    command.Parameters.AddWithValue("@KorisnickoIme", noviRadnik.KorisnickoIme);
-                    command.Parameters.AddWithValue("@Lozinka", noviRadnik.Lozinka);
-                   
+            DB.OpenConnection();
+               
+            string sql = "INSERT INTO Radnik (KorisnickoIme, Lozinka) OUTPUT INSERTED.Id VALUES (@KorisnickoIme, @Lozinka)";
+            using (SqlCommand command = new SqlCommand(sql, DB.GetConnection()))
+             {
+                 command.Parameters.AddWithValue("@KorisnickoIme", noviRadnik.KorisnickoIme);
+                 command.Parameters.AddWithValue("@Lozinka", noviRadnik.Lozinka);
 
-                    noviRadnik.Id = (int)command.ExecuteScalar();
-                 
-                }
-            
-           
- 
-         DB.CloseConnection();
+                 noviRadnik.Id = (int)command.ExecuteScalar();
+
+             } 
+
+
+            DB.CloseConnection();
           
         }
     }

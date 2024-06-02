@@ -33,5 +33,28 @@ namespace RecycloSmart
 
             MessageBox.Show("Uspjesna registracija!", "Informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void FormReg_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StartForm pocetnaForma = new StartForm();
+            Hide();
+            pocetnaForma.ShowDialog();
+            Close();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

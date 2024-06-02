@@ -29,5 +29,34 @@ namespace RecycloSmart
             formEvidentiraj.ShowDialog();
             Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormPretraziMaterijal pretrazi = new FormPretraziMaterijal();
+            Hide();
+            pretrazi.ShowDialog();
+            Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            StartForm startForm = new StartForm();
+            Hide();
+            startForm.ShowDialog();
+            Close();
+        }
+
+        private void FormRadnik_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PrikazMaterijala prikazMaterijala = new PrikazMaterijala();
+            Hide();
+            prikazMaterijala.ShowDialog();
+            Close();
+        }
     }
 }

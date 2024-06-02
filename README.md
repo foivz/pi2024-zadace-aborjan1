@@ -22,3 +22,8 @@ https://github.com/foivz/pi2024-zadace-aborjan1/blob/master/Korisni%C4%8Dki%20za
 ## Resursi
 
 Svi resursi nalaze se u mapi _Documentation_.
+
+## Prijava u aplikaciju
+1. Username: Radnik1   Lozinka: 123
+2. Username: Radnik2   Lozinka: 456
+   

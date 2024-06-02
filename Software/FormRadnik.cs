@@ -21,5 +21,13 @@ namespace RecycloSmart
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormEvidentiraj formEvidentiraj = new FormEvidentiraj();
+            Hide();
+            formEvidentiraj.ShowDialog();
+            Close();
+        }
     }
 }

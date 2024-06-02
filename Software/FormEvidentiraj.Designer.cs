@@ -72,7 +72,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 25);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Kolicina";
+            this.label2.Text = "Količina";
             // 
             // label3
             // 
